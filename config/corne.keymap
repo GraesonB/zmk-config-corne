@@ -38,7 +38,7 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <70>;
+            tapping-term-ms = <80>;
             hold-trigger-key-positions = <32 39 40 41 30 31 20 19 18 6 7 8 10 9 21 22 34 33 35 23 11>;
             flavor = "tap-preferred";
         };
@@ -49,7 +49,7 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <70>;
+            tapping-term-ms = <80>;
             hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38>;
             flavor = "tap-preferred";
         };
@@ -81,19 +81,19 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp GRAVE     &kp LESS_THAN               &kp GREATER_THAN        &kp UNDERSCORE          &kp MINUS         &kp PIPE         &kp CARET    &kp LEFT_BRACE               &kp RIGHT_BRACE                      &kp DOLLAR                &kp BACKSLASH                  &trans
-&kp QUESTION  &hml LEFT_META EXCLAMATION  &hml LEFT_ALT ASTERISK  &hmlq LEFT_SHIFT SLASH  &hml LCTRL EQUAL  &kp AMPERSAND    &kp HASH     &hmr RCTRL LEFT_PARENTHESIS  &hmrq RIGHT_SHIFT RIGHT_PARENTHESIS  &hmr RIGHT_ALT SEMICOLON  &hmr RIGHT_META DOUBLE_QUOTES  &trans
-&trans        &kp TILDE                   &kp PLUS                &kp LBKT                &kp RBKT          &kp PERCENT      &kp AT_SIGN  &kp COLON                    &kp COMMA                            &kp DOT                   &kp SQT                        &trans
-                                                                  &trans                  &trans            &trans           &trans       &trans                       &trans
+&kp GRAVE     &kp LESS_THAN               &kp GREATER_THAN        &kp UNDERSCORE  &kp MINUS         &kp PIPE         &kp CARET    &kp LEFT_BRACE               &kp RIGHT_BRACE        &kp DOLLAR                &kp BACKSLASH                  &trans
+&kp QUESTION  &hml LEFT_META EXCLAMATION  &hml LEFT_ALT ASTERISK  &kp SLASH       &hml LCTRL EQUAL  &kp AMPERSAND    &kp HASH     &hmr RCTRL LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &hmr RIGHT_ALT SEMICOLON  &hmr RIGHT_META DOUBLE_QUOTES  &trans
+&trans        &kp TILDE                   &kp PLUS                &kp LBKT        &kp RBKT          &kp PERCENT      &kp AT_SIGN  &kp COLON                    &kp COMMA              &kp DOT                   &kp SQT                        &trans
+                                                                  &trans          &trans            &trans           &trans       &trans                       &trans
             >;
         };
 
         raise {
             bindings = <
-&trans  &trans                   &trans                  &trans                     &trans                      &trans          &trans        &trans                       &trans                      &trans                   &trans                    &trans
-&trans  &hml LEFT_META NUMBER_1  &hml LEFT_ALT NUMBER_2  &hmlq LEFT_SHIFT NUMBER_3  &hml LEFT_CONTROL NUMBER_4  &kp NUMBER_5    &kp NUMBER_6  &hmr RIGHT_CONTROL NUMBER_7  &hmrq RIGHT_SHIFT NUMBER_8  &hmr RIGHT_ALT NUMBER_9  &hmr RIGHT_META NUMBER_0  &trans
-&trans  &trans                   &trans                  &trans                     &trans                      &trans          &trans        &trans                       &trans                      &trans                   &trans                    &trans
-                                                         &trans                     &trans                      &trans          &trans        &trans                       &trans
+&trans  &trans                   &trans                  &trans        &trans                      &trans          &trans        &trans                       &trans        &trans                   &trans                    &trans
+&trans  &hml LEFT_META NUMBER_1  &hml LEFT_ALT NUMBER_2  &kp NUMBER_3  &hml LEFT_CONTROL NUMBER_4  &kp NUMBER_5    &kp NUMBER_6  &hmr RIGHT_CONTROL NUMBER_7  &kp NUMBER_8  &hmr RIGHT_ALT NUMBER_9  &hmr RIGHT_META NUMBER_0  &trans
+&trans  &trans                   &trans                  &trans        &trans                      &trans          &trans        &trans                       &trans        &trans                   &trans                    &trans
+                                                         &trans        &trans                      &trans          &trans        &trans                       &trans
             >;
         };
 
